@@ -15,8 +15,11 @@ const createUserHandler = (req, res) => {
   }
   if (url === "/users") {
     req.write("<html>");
+    res.setHeader("Content-Type", "text/html");
     req.write("<head><title>Hello Users!</title>");
-    res.write("<body><h1>Hello awesome users of my app</h1></body>");
+    res.write(
+      "<body><ul><li>Abdul-Razak</li><li>Phaako</li><li>Neenah</li><li>Siham</li></ul></body>"
+    );
     res.write("</html>");
     return res.end();
   }
@@ -37,14 +40,6 @@ const createUserHandler = (req, res) => {
       });
     });
   }
-  res.setHeader("Content-Type", "text/html");
-  res.write("<html>");
-  res.write("<head><title>Hello Users!</title>");
-  res.write(
-    "<body><ul><li>Abdul-Razak</li><li>Phaako</li><li>Neenah</li><li>Siham</li></ul></body>"
-  );
-  res.write("</html>");
-  return res.end();
 };
 
 exports.handler = createUserHandler;
