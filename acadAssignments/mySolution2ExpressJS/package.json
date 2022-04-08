@@ -1,0 +1,18 @@
+{
+  "name": "mysolution2expressjs",
+  "version": "1.0.0",
+  "description": "my attempt of the second assigment of academind course on expressjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon app.js"
+  },
+  "author": "abdul-razak alhassan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

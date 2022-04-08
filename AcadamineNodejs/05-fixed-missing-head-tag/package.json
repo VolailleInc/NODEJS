@@ -1,0 +1,8 @@
+{
+  "name": "acapractice",
+  "version": "1.0.0",
+  "description": "practicing expressjs",
+  "main": "index.js",
+  "author": "abdul-razak",
+  "license": "MIT"
+}
