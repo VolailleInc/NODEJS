@@ -1,10 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const adminRoutes = require("./routes/admin.js");
-const shopRoutes = require("./routes/shop.js");
-
 const app = express();
+
+const adminRoutes = require("./routes/admin");
+const shopRoutes = require("./routes/shop");
 
 //Since request doesn't parse the body object
 //we need to register a parser by installing a tool
@@ -18,7 +18,5 @@ app.use(shopRoutes);
 //   console.log("This always runs!");
 //   next();
 // });
-
-
 
 app.listen(3000);
